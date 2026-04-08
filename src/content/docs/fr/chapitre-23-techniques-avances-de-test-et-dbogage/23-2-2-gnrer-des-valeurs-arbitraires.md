@@ -1,7 +1,0 @@
----
-title: Générer des valeurs arbitraires
-sidebar:
-  order: 2
-  label: 23.2.2 Générer des valeurs arbitraires
----
-
