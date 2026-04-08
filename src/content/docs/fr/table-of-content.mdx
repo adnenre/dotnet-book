@@ -257,18 +257,18 @@ import FileTree from "../../../components/FileTree.astro";
 - Chapitre 9 : Programmation asynchrone (async/await)
   - 9.1 Modèle asynchrone basé sur les tâches (TAP)
   - 9.1.1 Task sans résultat
-  - 9.1.2 Task<T> avec résultat
-  - 9.1.3 ValueTask et ValueTask<T> pour la performance
+  - 9.1.2 Task avec résultat
+  - 9.1.3 ValueTask et ValueTask pour la performance
   - 9.2 async et await
   - 9.2.1 Marquer une méthode async
   - 9.2.2 await extrait le résultat
   - 9.2.3 Transformation par le compilateur en machine à états
   - 9.3 Types de retour des méthodes async
   - 9.3.1 Task pour async void
-  - 9.3.2 Task<T> pour retourner une valeur
+  - 9.3.2 Task pour retourner une valeur
   - 9.3.3 void uniquement pour les gestionnaires d’événements (à éviter)
   - 9.4 Flux asynchrones
-  - 9.4.1 IAsyncEnumerable<T>
+  - 9.4.1 IAsyncEnumerable
   - 9.4.2 await foreach
   - 9.4.3 await using pour disposer de manière asynchrone
   - 9.5 Éviter async void
@@ -295,10 +295,10 @@ import FileTree from "../../../components/FileTree.astro";
   - 10.2.2 Patron Dispose
   - 10.2.3 Instruction using
   - 10.2.4 await using et IAsyncDisposable
-  - 10.3 Span<T> et Memory<T>
-  - 10.3.1 Span<T> réservé à la pile
-  - 10.3.2 Memory<T> pour le tas ou l’asynchrone
-  - 10.3.3 ArrayPool<T> pour louer des tampons
+  - 10.3 Span et Memory
+  - 10.3.1 Span réservé à la pile
+  - 10.3.2 Memory pour le tas ou l’asynchrone
+  - 10.3.3 ArrayPool pour louer des tampons
   - 10.4 Benchmarking
   - 10.4.1 BenchmarkDotNet
   - 10.4.2 Attributs Benchmark et MemoryDiagnoser
@@ -309,10 +309,10 @@ import FileTree from "../../../components/FileTree.astro";
   - 11.1.1 Syntaxe
   - 11.1.2 Nom des paramètres de type T, TKey, TValue
   - 11.2 Méthodes génériques
-  - 11.2.1 T MaMéthode<T>(T param)
+  - 11.2.1 T MaMéthode(T param)
   - 11.2.2 Inférence de type à l’appel
   - 11.3 Interfaces génériques
-  - 11.3.1 interface IRepository<T>
+  - 11.3.1 interface IRepository
   - 11.3.2 Covariance (out T) et contravariance (in T)
   - 11.4 Contraintes
   - 11.4.1 where T  : struct (type valeur)
@@ -380,20 +380,20 @@ import FileTree from "../../../components/FileTree.astro";
   - 15.1.3 MSTest
   - 15.2 Bibliothèques de simulation
   - 15.2.1 Moq (Mock, Setup, Verify)
-  - 15.2.2 NSubstitute (Substitute.For<T>())
+  - 15.2.2 NSubstitute (Substitute.For())
   - 15.2.3 FakeItEasy
   - 15.3 Doubles de test
   - 15.3.1 Stub
   - 15.3.2 Mock
   - 15.3.3 Fake
   - 15.4 Tests d’intégration
-  - 15.4.1 WebApplicationFactory<TStartup>
+  - 15.4.1 WebApplicationFactory
   - 15.4.2 Base de données en mémoire avec EF Core
   - 15.4.3 HttpClient pour tester les endpoints
   - 15.5 Projet Tester un service de calculatrice avec Moq
 - Chapitre 16 : Journalisation, diagnostic et configuration
   - 16.1 Journalisation
-  - 16.1.1 Interface ILogger<T>
+  - 16.1.1 Interface ILogger
   - 16.1.2 Niveaux de log  : Trace, Debug, Information, Warning, Error, Critical
   - 16.1.3 Journalisation structurée avec Serilog, NLog
   - 16.1.4 Enrichissement et destinations (console, fichier, Elasticsearch)
@@ -404,10 +404,10 @@ import FileTree from "../../../components/FileTree.astro";
   - 16.2.4 Secrets utilisateur (développement uniquement)
   - 16.2.5 Arguments de ligne de commande
   - 16.3 Patron Options
-  - 16.3.1 IOptions<T> singleton, pas de rechargement
-  - 16.3.2 IOptionsSnapshot<T> par portée, rechargement au changement
-  - 16.3.3 IOptionsMonitor<T> singleton avec notifications de changement
-  - 16.3.4 Configure<T> et PostConfigure
+  - 16.3.1 IOptions singleton, pas de rechargement
+  - 16.3.2 IOptionsSnapshot par portée, rechargement au changement
+  - 16.3.3 IOptionsMonitor singleton avec notifications de changement
+  - 16.3.4 Configure et PostConfigure
   - 16.4 Projet Application configurable avec Serilog
 - Chapitre 17 : Injection de dépendances en profondeur
   - 17.1 Durées de vie des services
@@ -498,15 +498,15 @@ import FileTree from "../../../components/FileTree.astro";
   - 22.3 Synchronisation légère
   - 22.3.1 SpinLock (quand le verrou est tenu brièvement)
   - 22.3.2 SpinWait (attente hybride)
-  - 22.3.3 Lazy<T> avec initialisation thread-safe
+  - 22.3.3 Lazy avec initialisation thread-safe
   - 22.3.4 LazyInitializer (helpers statiques)
   - 22.4 Collections concurrentes
-  - 22.4.1 ConcurrentDictionary<TKey,TValue>
-  - 22.4.2 ConcurrentQueue<T>
-  - 22.4.3 ConcurrentStack<T>
-  - 22.4.4 ConcurrentBag<T>
-  - 22.4.5 BlockingCollection<T>
-  - 22.4.6 Channel<T> (producteur-consommateur, support asynchrone)
+  - 22.4.1 ConcurrentDictionary
+  - 22.4.2 ConcurrentQueue
+  - 22.4.3 ConcurrentStack
+  - 22.4.4 ConcurrentBag
+  - 22.4.5 BlockingCollection
+  - 22.4.6 Channel (producteur-consommateur, support asynchrone)
   - 22.5 Projet Compteur thread-safe avec Interlocked
 - Chapitre 23 : Techniques avancées de test et débogage
   - 23.1 Test instantané (snapshot) avec Verify
@@ -639,9 +639,9 @@ import FileTree from "../../../components/FileTree.astro";
   - 28.1.4 Suivi des modifications et SaveChanges
   - 28.1.5 Jetons de concurrence (Timestamp)
   - 28.2 Dapper
-  - 28.2.1 QueryAsync<T> (SQL brut)
+  - 28.2.1 QueryAsync (SQL brut)
   - 28.2.2 ExecuteAsync (non-requête)
-  - 28.2.3 Multi-mappage (QueryAsync<T, U, TResult>)
+  - 28.2.3 Multi-mappage 
   - 28.2.4 Avantage de performance par rapport à EF Core
   - 28.3 Quand utiliser l’un ou l’autre
   - 28.3.1 EF Core pour les graphes d’objets complexes, migrations
