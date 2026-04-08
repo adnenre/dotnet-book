@@ -68,7 +68,7 @@ Have a great day!
 3. Loop until user types "exit"
 4. Save greetings to a file using `File.WriteAllText()`
 
---codecsharp
+```csharp
 // Extension: Validate non-empty input
 string name;
 do
@@ -76,4 +76,4 @@ do
 Console.Write("What is your name? ");
 name = Console.ReadLine();
 } while (string.IsNullOrWhiteSpace(name));
---code
+```

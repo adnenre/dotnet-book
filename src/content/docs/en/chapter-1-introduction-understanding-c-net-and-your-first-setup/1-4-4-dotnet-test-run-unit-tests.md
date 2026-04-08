@@ -11,7 +11,7 @@ sidebar:
 
 ## Basic Usage
 
---codebash
+```bash
 
 # Run all tests in the current project
 
@@ -24,11 +24,11 @@ dotnet test -c Release
 # Run tests in a specific project
 
 dotnet test tests/MyTests.csproj
---code
+```
 
 ## Filtering Tests
 
---codebash
+```bash
 
 # Run tests by name
 
@@ -41,11 +41,11 @@ dotnet test --filter "Category=Unit"
 # Run tests that match a pattern
 
 dotnet test --filter "FullyQualifiedName~Calculator"
---code
+```
 
 ## Test Results
 
---codebash
+```bash
 
 # Run with detailed logging
 
@@ -54,4 +54,4 @@ dotnet test -v detailed
 # Generate test results in TRX format
 
 dotnet test --logger "trx"
---code
+```
