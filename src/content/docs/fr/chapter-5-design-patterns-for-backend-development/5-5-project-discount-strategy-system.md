@@ -9,42 +9,42 @@ sidebar:
 
 ## Code complet
 
---codecsharp
+```csharp
 using System;
 
 public interface IDiscountStrategy
 {
-decimal CalculateDiscount(decimal total);
+    decimal CalculateDiscount(decimal total);
 }
 
 public class NoDiscount : IDiscountStrategy
 {
-public decimal CalculateDiscount(decimal total) => 0;
+    public decimal CalculateDiscount(decimal total) => 0;
 }
 
 public class PercentageDiscount : IDiscountStrategy
 {
-private readonly decimal \_percentage;
-public PercentageDiscount(decimal percentage) => \_percentage = percentage;
-public decimal CalculateDiscount(decimal total) => total \* \_percentage / 100;
+    private readonly decimal _percentage;
+    public PercentageDiscount(decimal percentage) => _percentage = percentage;
+    public decimal CalculateDiscount(decimal total) => total * _percentage / 100;
 }
 
 public class FixedAmountDiscount : IDiscountStrategy
 {
-private readonly decimal \_amount;
-public FixedAmountDiscount(decimal amount) => \_amount = amount;
-public decimal CalculateDiscount(decimal total) => Math.Min(\_amount, total);
+    private readonly decimal _amount;
+    public FixedAmountDiscount(decimal amount) => _amount = amount;
+    public decimal CalculateDiscount(decimal total) => Math.Min(_amount, total);
 }
 
 public class SeasonalDiscount : IDiscountStrategy
 {
-public decimal CalculateDiscount(decimal total) => total \* 0.15m;
+    public decimal CalculateDiscount(decimal total) => total * 0.15m;
 }
 
 public class Order
 {
-public decimal Total { get; set; }
-private IDiscountStrategy \_discountStrategy;
+    public decimal Total { get; set; }
+    private IDiscountStrategy _discountStrategy;
 
     public void SetDiscountStrategy(IDiscountStrategy strategy)
     {
@@ -56,16 +56,15 @@ private IDiscountStrategy \_discountStrategy;
         if (_discountStrategy == null) return Total;
         return Total - _discountStrategy.CalculateDiscount(Total);
     }
-
 }
 
 public class Program
 {
-static void Main()
-{
-Console.WriteLine("=== Discount Strategy System ===");
-Console.Write("Enter order total: ");
-decimal total = decimal.Parse(Console.ReadLine());
+    static void Main()
+    {
+        Console.WriteLine("=== Discount Strategy System ===");
+        Console.Write("Enter order total: ");
+        decimal total = decimal.Parse(Console.ReadLine());
 
         var order = new Order { Total = total };
 
@@ -89,25 +88,23 @@ decimal total = decimal.Parse(Console.ReadLine());
         Console.WriteLine($"Original total: {total:C}");
         Console.WriteLine($"Final total after discount: {order.GetFinalTotal():C}");
     }
-
 }
---code
+```
 
 ## Exemple d’exécution
 
---codebash
+```bash
 === Discount Strategy System ===
 Enter order total: 100
 Select discount strategy:
-
 1. No discount
 2. Percentage discount (10%)
 3. Fixed amount discount ($20)
 4. Seasonal discount (15%)
-   Choice: 2
-   Original total: $100.00
-   Final total after discount: $90.00
-   --code
+Choice: 2
+Original total: $100.00
+Final total after discount: $90.00
+```
 
 ## Exemple d'utilisation dans le monde réel
 
