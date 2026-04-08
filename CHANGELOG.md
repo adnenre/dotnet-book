@@ -166,3 +166,38 @@ FileTree accept a props to add translation
   - 5.4.2 Middleware
   - 5.4.3 Dependency Injection
   - 5.5 Project Discount Strategy System
+
+## [Version 1.1.4] - 2024-04-08
+
+### Added
+
+- **Chapter 6 : Advanced Type System**
+  - 6.1 Records
+  - 6.1.1 record class
+  - 6.1.2 record struct
+  - 6.1.3 Positional records
+  - 6.1.4 with expressions
+  - 6.1.5 Value based equality
+  - 6.2 Structs
+  - 6.2.1 struct
+  - 6.2.2 readonly struct
+  - 6.2.3 ref struct
+  - 6.2.4 When to use struct vs class
+  - 6.3 Enums
+  - 6.3.1 enum definition
+  - 6.3.2 Underlying type
+  - 6.3.3 Flags enum
+  - 6.3.4 Enum Parse and Enum GetValues
+  - 6.4 Nullable reference types C# 8 and later
+  - 6.4.1 string question mark nullable reference
+  - 6.4.2 Nullable annotation context
+  - 6.4.3 Null forgiving operator
+  - 6.4.4 Nullable warnings
+  - 6.5 Pattern matching
+  - 6.5.1 Constant pattern
+  - 6.5.2 Type pattern
+  - 6.5.3 Property pattern
+  - 6.5.4 Positional pattern
+  - 6.5.5 List patterns C# 11
+  - 6.5.6 var pattern
+  - 6.6 Project Immutable Person Record with Validation
