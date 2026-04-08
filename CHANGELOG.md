@@ -92,3 +92,42 @@ FileTree accept a props to add translation
   - 2.6.3 Convert class
   - 2.6.4 Parse and TryParse
   - 2.7 Project Simple Calculator
+
+## [Version 1.1.2] - 2024-04-08
+
+### Added
+
+- **Chapter 3 : Control Flow and Operators**
+  - 3.1 Conditional statements
+  - 3.1.1 if statement
+  - 3.1.2 else if chain
+  - 3.1.3 else clause
+  - 3.1.4 nested if
+  - 3.2 switch statement
+  - 3.2.1 switch with constant patterns
+  - 3.2.2 switch with pattern matching C# 7 and later
+  - 3.2.3 when guards
+  - 3.2.4 goto case rare
+  - 3.3 Switch expressions C# 8 and later
+  - 3.3.1 syntax
+  - 3.3.2 discard pattern
+  - 3.4 Loops
+  - 3.4.1 for loop
+  - 3.4.2 foreach
+  - 3.4.3 while
+  - 3.4.4 do while
+  - 3.5 Loop control
+  - 3.5.1 break
+  - 3.5.2 continue
+  - 3.5.3 return
+  - 3.5.4 goto avoid
+  - 3.6 Operators
+  - 3.6.1 Arithmetic
+  - 3.6.2 Assignment
+  - 3.6.3 Logical
+  - 3.6.4 Comparison
+  - 3.6.5 Null coalescing
+  - 3.6.6 Null conditional
+  - 3.6.7 Ternary
+  - 3.6.8 Bitwise
+  - 3.7 Project Number Guessing Game
