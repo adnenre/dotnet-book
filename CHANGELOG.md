@@ -131,3 +131,38 @@ FileTree accept a props to add translation
   - 3.6.7 Ternary
   - 3.6.8 Bitwise
   - 3.7 Project Number Guessing Game
+
+## [Version 1.1.3] - 2024-04-08
+
+### Added
+
+- **Chapter 5 : Design Patterns for Backend Development**
+  - 5.1 Creational patterns
+  - 5.1.1 Factory Method
+  - 5.1.2 Abstract Factory
+  - 5.1.3 Singleton
+  - 5.1.4 Builder
+  - 5.1.5 Prototype
+  - 5.2 Structural patterns
+  - 5.2.1 Adapter
+  - 5.2.2 Proxy
+  - 5.2.3 Decorator
+  - 5.2.4 Facade
+  - 5.2.5 Bridge
+  - 5.2.6 Composite
+  - 5.2.7 Flyweight
+  - 5.3 Behavioural patterns
+  - 5.3.1 Strategy
+  - 5.3.2 Command
+  - 5.3.3 Observer
+  - 5.3.4 Chain of Responsibility
+  - 5.3.5 Mediator
+  - 5.3.6 Memento
+  - 5.3.7 State
+  - 5.3.8 Template Method
+  - 5.3.9 Visitor
+  - 5.4 Architectural patterns for backend
+  - 5.4.1 Repository
+  - 5.4.2 Middleware
+  - 5.4.3 Dependency Injection
+  - 5.5 Project Discount Strategy System

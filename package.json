@@ -1,10 +1,10 @@
 {
   "name": "dotnet-book",
   "type": "module",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "A book about dotnet – from basics to advanced topics",
   "author": "adnen rebai <adnen.rebai@gmail.com> (https://adnenre.dev)",
-  "homepage": "https://v0-dotnet-book.vercel.app/",
+  "homepage": "https://dotnet-book.vercel.app/",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
