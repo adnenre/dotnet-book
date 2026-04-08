@@ -1,11 +1,8 @@
 ---
----
-
 title: Read‑only Fields
 sidebar:
-order: 26
-label: 2.3.5 Read only fields
-
+  order: 26
+  label: 2.3.5 Read only fields
 ---
 
 Read‑only fields can be assigned only in the constructor or at declaration.
