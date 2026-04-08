@@ -1,0 +1,7 @@
+---
+title: Formateurs personnalisés
+sidebar:
+  order: 3
+  label: 24.4.3 Formateurs personnalisés
+---
+

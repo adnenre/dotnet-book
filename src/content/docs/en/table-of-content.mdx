@@ -1,0 +1,807 @@
+---
+title: Table Of Contents
+description: Get started with .Net from zero, table of content.
+template: splash # Remove or comment out this line to display the site sidebar on this page.
+---
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+import FileTree from "../../../components/FileTree.astro";
+
+<FileTree>
+- Chapter 1 : Introduction Understanding C#, .Net, and Your First Setup
+  - 1.1 What is .Net
+  - 1.1.1 The .Net Framework Windows only legacy
+  - 1.1.2 The .Net Core cross platform modern
+  - 1.1.3 The .Net 5, 6, 7, 8 unified platform
+  - 1.1.4 The .Net Standard API compatibility contract
+  - 1.2 Installing the .Net SDK
+  - 1.2.1 Download from dotnet.microsoft.com
+  - 1.2.2 Verify installation with dotnet info
+  - 1.2.3 SDK vs Runtime
+  - 1.3 Project structure
+  - 1.3.1 csproj file XML format package references
+  - 1.3.2 Program.cs entry point
+  - 1.3.3 appsettings.json configuration
+  - 1.3.4 obj and bin folders
+  - 1.4 The dotnet CLI
+  - 1.4.1 dotnet new create project from template
+  - 1.4.2 dotnet build compile
+  - 1.4.3 dotnet run build and execute
+  - 1.4.4 dotnet test run unit tests
+  - 1.4.5 dotnet publish create deployable output
+  - 1.5 Top level statements C# 9 and later
+  - 1.5.1 No explicit Main method
+  - 1.5.2 Implicit using directives
+  - 1.5.3 When to use vs traditional Main
+  - 1.6 Your first console app Hello World
+  - 1.6.1 Create project dotnet new console n HelloWorld
+  - 1.6.2 Write Console.WriteLine Hello World
+  - 1.6.3 Run and observe output
+  - 1.7 Project Command Line Greeting Tool
+  - 1.7.1 Idea ask name and favourite colour print greeting
+  - 1.7.2 Folder structure GreetingTool Program.cs
+  - 1.7.3 Steps ask name ask colour print personalised greeting
+- Chapter 2 : Primitive Types and Basic Syntax
+  - 2.1 Value types
+  - 2.1.1 Integral types
+    - 2.1.1.1 sbyte
+    - 2.1.1.2 byte
+    - 2.1.1.3 short
+    - 2.1.1.4 ushort
+    - 2.1.1.5 int
+    - 2.1.1.6 uint
+    - 2.1.1.7 long
+    - 2.1.1.8 ulong
+    - 2.1.2 Floating point types
+    - 2.1.2.1 float
+    - 2.1.2.2 double
+    - 2.1.2.3 decimal
+    - 2.1.3 bool
+    - 2.1.4 char
+  - 2.2 Reference types
+  - 2.2.1 string
+  - 2.2.2 object
+  - 2.2.3 dynamic
+  - 2.3 Variables and constants
+  - 2.3.1 Declaration type variableName
+  - 2.3.2 Initialisation int x = 5
+  - 2.3.3 Type inference with var
+  - 2.3.4 Constants const double Pi = 3.14
+  - 2.3.5 Read only fields
+  - 2.4 String interpolation
+  - 2.4.1 Syntax Hello name
+  - 2.4.2 Formatting value format
+  - 2.4.3 Escape sequences for literal brace
+  - 2.5 Basic IO
+  - 2.5.1 Console.WriteLine line
+  - 2.5.2 Console.Write no newline
+  - 2.5.3 Console.ReadLine returns string
+  - 2.5.4 Console.ReadKey single character
+  - 2.6 Type conversion
+  - 2.6.1 Implicit conversion
+  - 2.6.2 Explicit cast
+  - 2.6.3 Convert class
+  - 2.6.4 Parse and TryParse
+  - 2.7 Project Simple Calculator
+- Chapter 3 : Control Flow and Operators
+  - 3.1 Conditional statements
+  - 3.1.1 if statement
+  - 3.1.2 else if chain
+  - 3.1.3 else clause
+  - 3.1.4 nested if
+  - 3.2 switch statement
+  - 3.2.1 switch with constant patterns
+  - 3.2.2 switch with pattern matching C# 7 and later
+  - 3.2.3 when guards
+  - 3.2.4 goto case rare
+  - 3.3 Switch expressions C# 8 and later
+  - 3.3.1 syntax
+  - 3.3.2 discard pattern
+  - 3.4 Loops
+  - 3.4.1 for loop
+  - 3.4.2 foreach
+  - 3.4.3 while
+  - 3.4.4 do while
+  - 3.5 Loop control
+  - 3.5.1 break
+  - 3.5.2 continue
+  - 3.5.3 return
+  - 3.5.4 goto avoid
+  - 3.6 Operators
+  - 3.6.1 Arithmetic
+  - 3.6.2 Assignment
+  - 3.6.3 Logical
+  - 3.6.4 Comparison
+  - 3.6.5 Null coalescing
+  - 3.6.6 Null conditional
+  - 3.6.7 Ternary
+  - 3.6.8 Bitwise
+  - 3.7 Project Number Guessing Game
+- Chapter 4 : Object Oriented Programming OOP Deep Dive
+  - 4.1 Classes and objects
+  - 4.1.1 Class definition
+  - 4.1.2 Instantiation
+  - 4.1.3 Fields
+  - 4.1.4 Properties
+  - 4.1.5 Methods
+  - 4.2 Encapsulation
+  - 4.2.1 Access modifiers
+  - 4.2.2 Property accessors
+  - 4.2.3 Auto implemented properties
+  - 4.3 Inheritance
+  - 4.3.1 Base class and derived class
+  - 4.3.2 base keyword
+  - 4.3.3 Sealed classes
+  - 4.3.4 virtual and override methods
+  - 4.3.5 abstract classes and methods
+  - 4.3.6 Hiding members with new
+  - 4.4 Polymorphism
+  - 4.4.1 Compile time overloading
+  - 4.4.2 Runtime virtual override
+  - 4.4.3 is and as operators
+  - 4.5 Interfaces
+  - 4.5.1 Interface definition
+  - 4.5.2 Implementing an interface
+  - 4.5.3 Explicit interface implementation
+  - 4.5.4 Default interface methods C# 8 and later
+  - 4.6 Static classes and members
+  - 4.6.1 Static fields methods properties
+  - 4.6.2 Static constructor
+  - 4.6.3 Static class cannot be instantiated
+  - 4.7 Project Library Management System console
+- Chapter 5 : Design Patterns for Backend Development
+  - 5.1 Creational patterns
+  - 5.1.1 Factory Method
+  - 5.1.2 Abstract Factory
+  - 5.1.3 Singleton
+  - 5.1.4 Builder
+  - 5.1.5 Prototype
+  - 5.2 Structural patterns
+  - 5.2.1 Adapter
+  - 5.2.2 Proxy
+  - 5.2.3 Decorator
+  - 5.2.4 Facade
+  - 5.2.5 Bridge
+  - 5.2.6 Composite
+  - 5.2.7 Flyweight
+  - 5.3 Behavioural patterns
+  - 5.3.1 Strategy
+  - 5.3.2 Command
+  - 5.3.3 Observer
+  - 5.3.4 Chain of Responsibility
+  - 5.3.5 Mediator
+  - 5.3.6 Memento
+  - 5.3.7 State
+  - 5.3.8 Template Method
+  - 5.3.9 Visitor
+  - 5.4 Architectural patterns for backend
+  - 5.4.1 Repository
+  - 5.4.2 Middleware
+  - 5.4.3 Dependency Injection
+  - 5.5 Project Discount Strategy System
+- Chapter 6 : Advanced Type System
+  - 6.1 Records
+  - 6.1.1 record class
+  - 6.1.2 record struct
+  - 6.1.3 Positional records
+  - 6.1.4 with expressions
+  - 6.1.5 Value based equality
+  - 6.2 Structs
+  - 6.2.1 struct
+  - 6.2.2 readonly struct
+  - 6.2.3 ref struct
+  - 6.2.4 When to use struct vs class
+  - 6.3 Enums
+  - 6.3.1 enum definition
+  - 6.3.2 Underlying type
+  - 6.3.3 Flags enum
+  - 6.3.4 Enum Parse and Enum GetValues
+  - 6.4 Nullable reference types C# 8 and later
+  - 6.4.1 string question mark nullable reference
+  - 6.4.2 Nullable annotation context
+  - 6.4.3 Null forgiving operator
+  - 6.4.4 Nullable warnings
+  - 6.5 Pattern matching
+  - 6.5.1 Constant pattern
+  - 6.5.2 Type pattern
+  - 6.5.3 Property pattern
+  - 6.5.4 Positional pattern
+  - 6.5.5 List patterns C# 11
+  - 6.5.6 var pattern
+  - 6.6 Project Immutable Person Record with Validation
+- Chapter 7 : Delegates Events and Lambdas
+  - 7.1 Delegates
+  - 7.1.1 Declaration
+  - 7.1.2 Instantiation and invocation
+  - 7.1.3 Multicast delegates
+  - 7.1.4 Generic delegates Action Func Predicate
+  - 7.2 Events
+  - 7.2.1 event keyword
+  - 7.2.2 Subscribing and unsubscribing
+  - 7.2.3 Event invocation
+  - 7.2.4 Standard pattern EventHandler and EventArgs
+  - 7.3 Lambda expressions
+  - 7.3.1 Syntax
+  - 7.3.2 Statement lambdas
+  - 7.3.3 Capturing outer variables closures
+  - 7.3.4 Expression trees
+  - 7.4 Anonymous functions
+  - 7.4.1 delegate keyword pre lambda
+  - 7.4.2 Comparison with lambdas
+  - 7.5 Project Button Click Simulator Event
+- Chapter 8 : LINQ Language Integrated Query
+  - 8.1 Query syntax vs method syntax
+  - 8.1.1 Query syntax
+  - 8.1.2 Method syntax
+  - 8.1.3 Mixing both
+  - 8.2 Deferred vs immediate execution
+  - 8.2.1 Deferred operators
+  - 8.2.2 Immediate operators
+  - 8.2.3 Streaming vs buffering operators
+  - 8.3 LINQ to Objects LINQ to XML LINQ to Entities
+  - 8.3.1 In memory collections
+  - 8.3.2 XML
+  - 8.3.3 EF Core SQL translation
+  - 8.4 Common operators
+  - 8.4.1 Filtering
+  - 8.4.2 Projection
+  - 8.4.3 Ordering
+  - 8.4.4 Grouping
+  - 8.4.5 Joining
+  - 8.4.6 Aggregation
+  - 8.4.7 Element operators
+  - 8.4.8 Set operators
+  - 8.4.9 Quantifiers
+  - 8.4.10 Partitioning
+  - 8.5 Project Employee Data Analysis
+- Chapter 9 : Asynchronous Programming async await
+  - 9.1 Task based Asynchronous Pattern TAP
+  - 9.1.1 Task no result
+  - 9.1.2 Task T result
+  - 9.1.3 ValueTask and ValueTask T for performance
+  - 9.2 async and await
+  - 9.2.1 Marking method async
+  - 9.2.2 await unwraps the result
+  - 9.2.3 Compiler transformation into state machine
+  - 9.3 Return types of async methods
+  - 9.3.1 Task for void async
+  - 9.3.2 Task T for returning value
+  - 9.3.3 void only for event handlers avoid
+  - 9.4 Asynchronous streams
+  - 9.4.1 IAsyncEnumerable T
+  - 9.4.2 await foreach
+  - 9.4.3 await using asynchronous disposable
+  - 9.5 Avoiding async void
+  - 9.5.1 Exceptions cannot be caught
+  - 9.5.2 Hard to test
+  - 9.6 ConfigureAwait false
+  - 9.6.1 Avoid capturing original SynchronizationContext
+  - 9.6.2 Use in library code
+  - 9.7 Cancellation tokens
+  - 9.7.1 CancellationTokenSource
+  - 9.7.2 CancellationToken
+  - 9.7.3 ThrowIfCancellationRequested
+  - 9.7.4 Cooperative cancellation
+  - 9.8 Project Async Weather Fetcher
+- Chapter 10 : Memory Management and Performance
+  - 10.1 Garbage collection
+  - 10.1.1 Generations 0, 1, 2
+  - 10.1.2 Workstation GC vs Server GC
+  - 10.1.3 Background GC
+  - 10.1.4 Large Object Heap LOH
+  - 10.1.5 Pinned objects
+  - 10.2 IDisposable
+  - 10.2.1 Unmanaged resources
+  - 10.2.2 Dispose pattern
+  - 10.2.3 using statement
+  - 10.2.4 await using and IAsyncDisposable
+  - 10.3 Span T and Memory T
+  - 10.3.1 Stack only Span T
+  - 10.3.2 Memory T for heap or async
+  - 10.3.3 ArrayPool T for renting buffers
+  - 10.4 Benchmarking
+  - 10.4.1 BenchmarkDotNet
+  - 10.4.2 Benchmark and MemoryDiagnoser attributes
+  - 10.4.3 Running benchmarks avoiding common pitfalls
+  - 10.5 Project Benchmark String Concatenation vs StringBuilder
+- Chapter 11 : Generics and Constraints
+  - 11.1 Generic classes
+  - 11.1.1 Syntax
+  - 11.1.2 Type parameters naming T, TKey, TValue
+  - 11.2 Generic methods
+  - 11.2.1 T MyMethod T param
+  - 11.2.2 Type inference at call site
+  - 11.3 Generic interfaces
+  - 11.3.1 interface IRepository T
+  - 11.3.2 Covariance out T and contravariance in T
+  - 11.4 Constraints
+  - 11.4.1 where T struct value type
+  - 11.4.2 where T class reference type
+  - 11.4.3 where T new parameterless constructor
+  - 11.4.4 where T BaseClass base class constraint
+  - 11.4.5 where T IMyInterface interface constraint
+  - 11.4.6 where T unmanaged no references
+  - 11.4.7 Multiple constraints
+  - 11.5 Project Generic Repository Simulator
+- Chapter 12 : Exceptions and Error Handling
+  - 12.1 try catch finally
+  - 12.1.1 Catching specific exception types
+  - 12.1.2 Multiple catch blocks
+  - 12.1.3 finally for cleanup
+  - 12.2 Exception filters
+  - 12.2.1 catch with when condition
+  - 12.3 Custom exceptions
+  - 12.3.1 Derive from Exception or ApplicationException
+  - 12.3.2 Serialisation constructor
+  - 12.3.3 Adding custom properties
+  - 12.4 ExceptionDispatchInfo
+  - 12.4.1 Capturing and rethrowing with original stack trace
+  - 12.5 Global exception handling
+  - 12.5.1 ASP.NET Core middleware
+  - 12.5.2 AppDomain UnhandledException
+  - 12.5.3 TaskScheduler UnobservedTaskException
+  - 12.6 Project Safe File Reader with Retry
+- Chapter 13 : Reflection Attributes and Source Generators
+  - 13.1 Reflection
+  - 13.1.1 Type class
+  - 13.1.2 Assembly loading and scanning
+  - 13.1.3 MemberInfo MethodInfo PropertyInfo
+  - 13.1.4 Invoking methods dynamically
+  - 13.2 Custom attributes
+  - 13.2.1 Attribute class AttributeUsage
+  - 13.2.2 Applying attributes to targets
+  - 13.2.3 Reading attributes with reflection
+  - 13.3 Source generators
+  - 13.3.1 What are source generators
+  - 13.3.2 Incremental generators
+  - 13.3.3 Use cases compile time code performance
+  - 13.3.4 Difference from reflection no runtime overhead
+  - 13.4 Project Attribute Based Validation Engine
+- Chapter 14 : Modern C# Features for Backend
+  - 14.1 init only setters
+  - 14.1.1 Immutable objects after construction
+  - 14.1.2 Object initialiser with init
+  - 14.2 Required members C# 11
+  - 14.2.1 required keyword
+  - 14.2.2 Constructor ensures required properties set
+  - 14.3 Record types emphasis
+  - 14.4 Interpolated string handlers
+  - 14.4.1 Performance optimisation for logging
+  - 14.4.2 InterpolatedStringHandler struct
+  - 14.5 Caller info attributes
+  - 14.5.1 CallerMemberName
+  - 14.5.2 CallerArgumentExpression
+  - 14.5.3 CallerFilePath and CallerLineNumber
+  - 14.6 Project Logging Helper with Caller Info
+- Chapter 15 : Testing and Mocking
+  - 15.1 Unit testing frameworks
+  - 15.1.1 xUnit Fact Theory InlineData
+  - 15.1.2 NUnit Test TestCase
+  - 15.1.3 MSTest
+  - 15.2 Mocking libraries
+  - 15.2.1 Moq Mock Setup Verify
+  - 15.2.2 NSubstitute Substitute.For
+  - 15.2.3 FakeItEasy
+  - 15.3 Test doubles
+  - 15.3.1 Stub
+  - 15.3.2 Mock
+  - 15.3.3 Fake
+  - 15.4 Integration testing
+  - 15.4.1 WebApplicationFactory TStartup
+  - 15.4.2 In memory database with EF Core
+  - 15.4.3 HttpClient for testing endpoints
+  - 15.5 Project Testing a Calculator Service with Moq
+- Chapter 16 : Logging Diagnostics and Configuration
+  - 16.1 Logging
+  - 16.1.1 ILogger T interface
+  - 16.1.2 Log levels Trace Debug Information Warning Error Critical
+  - 16.1.3 Structured logging with Serilog NLog
+  - 16.1.4 Enrichment and sinks console file Elasticsearch
+  - 16.2 Configuration
+  - 16.2.1 IConfiguration and configuration providers
+  - 16.2.2 JSON files appsettings.json
+  - 16.2.3 Environment variables
+  - 16.2.4 User secrets for development only
+  - 16.2.5 Command line arguments
+  - 16.3 Options pattern
+  - 16.3.1 IOptions T singleton no reload
+  - 16.3.2 IOptionsSnapshot T scoped reload on change
+  - 16.3.3 IOptionsMonitor T singleton with change notifications
+  - 16.3.4 Configure T and PostConfigure
+  - 16.4 Project Configurable App with Serilog
+- Chapter 17 : Dependency Injection Deep Dive
+  - 17.1 Service lifetimes
+  - 17.1.1 Singleton one instance for entire app
+  - 17.1.2 Scoped one per HTTP request or scope
+  - 17.1.3 Transient new instance every time
+  - 17.2 Registration methods
+  - 17.2.1 AddSingleton AddScoped AddTransient
+  - 17.2.2 Factory delegates
+  - 17.2.3 Open generic registrations
+  - 17.3 Service resolution
+  - 17.3.1 Constructor injection preferred
+  - 17.3.2 IServiceProvider directly
+  - 17.3.3 IServiceScopeFactory for creating scopes
+  - 17.4 Decorator pattern with DI
+  - 17.4.1 Using AddScoped to wrap a service
+  - 17.4.2 Scrutor library for decorators
+  - 17.5 Project DI Lifetime Demonstrator
+- Chapter 18 : Interop and Low Level APIs
+  - 18.1 PInvoke
+  - 18.1.1 DllImport attribute legacy
+  - 18.1.2 LibraryImport source generator .Net 7 and later
+  - 18.1.3 Marshalling strings structs pointers
+  - 18.2 Unsafe code
+  - 18.2.1 unsafe context
+  - 18.2.2 Pointers
+  - 18.2.3 fixed statement to pin managed objects
+  - 18.2.4 stackalloc allocate on stack
+  - 18.3 Memory mapped files
+  - 18.3.1 MemoryMappedFile.CreateFromFile
+  - 18.3.2 MemoryMappedViewAccessor
+  - 18.4 Marshal class
+  - 18.4.1 Marshal.AllocHGlobal unmanaged memory
+  - 18.4.2 Marshal.StructureToPtr
+  - 18.4.3 Marshal.PtrToStructure
+  - 18.5 Project Call Windows MessageBox via PInvoke
+- Chapter 19 : Backend Specific Patterns
+  - 19.1 Middleware pipeline
+  - 19.1.1 Use short circuiting
+  - 19.1.2 Run terminal middleware
+  - 19.1.3 Map branching
+  - 19.1.4 Order of middleware
+  - 19.2 Request delegates
+  - 19.2.1 RequestDelegate signature
+  - 19.2.2 Inline middleware with Use
+  - 19.3 Custom middleware
+  - 19.3.1 Class with InvokeAsync method
+  - 19.3.2 Injecting services scoped singleton
+  - 19.3.3 Calling next context
+  - 19.4 Project Custom Request Logging Middleware
+- Chapter 20 : Code Quality and Tooling
+  - 20.1 Roslyn analyzers
+  - 20.1.1 FxCop legacy and Microsoft.CodeAnalysis.NetAnalyzers
+  - 20.1.2 StyleCop naming layout
+  - 20.1.3 SonarAnalyzer security bugs
+  - 20.2 Formatting
+  - 20.2.1 editorconfig file
+  - 20.2.2 dotnet format command
+  - 20.2.3 IDE integration VS Rider VS Code
+  - 20.3 Pre commit hooks
+  - 20.3.1 Husky.NET or simple bash scripts
+  - 20.3.2 Running dotnet format and dotnet test before commit
+  - 20.4 Project Enforce Coding Standards with editorconfig
+- Chapter 21 : CLR Internals and Diagnostics
+  - 21.1 JIT compilation
+  - 21.1.1 Tiered compilation
+  - 21.1.2 ReadyToRun R2R ahead of time
+  - 21.1.3 Cross gen single file Native AOT
+  - 21.2 Diagnostic tools
+  - 21.2.1 dotnet trace runtime events profiling
+  - 21.2.2 dotnet dump heap analysis crash dumps
+  - 21.2.3 dotnet counters performance counters
+  - 21.2.4 dotnet gcdump GC heap snapshots
+  - 21.3 Event listeners
+  - 21.3.1 EventSource custom events
+  - 21.3.2 EventListener consume events
+  - 21.3.3 DiagnosticSource for library instrumentation
+  - 21.4 Project Collect GC Events with EventListener
+- Chapter 22 : Low Level Concurrency and Lock Free Code
+  - 22.1 Threading basics recap
+  - 22.1.1 System.Threading.Thread
+  - 22.1.2 ThreadPool
+  - 22.1.3 Task as higher level abstraction
+  - 22.2 Lock free primitives
+  - 22.2.1 Interlocked class
+  - 22.2.2 Volatile prevent compiler optimisations
+  - 22.2.3 MemoryBarrier rarely needed directly
+  - 22.3 Lightweight synchronisation
+  - 22.3.1 SpinLock when lock held for short time
+  - 22.3.2 SpinWait hybrid spinning
+  - 22.3.3 Lazy T with thread safe initialisation
+  - 22.3.4 LazyInitializer static helpers
+  - 22.4 Concurrent collections
+  - 22.4.1 ConcurrentDictionary TKey TValue
+  - 22.4.2 ConcurrentQueue T
+  - 22.4.3 ConcurrentStack T
+  - 22.4.4 ConcurrentBag T
+  - 22.4.5 BlockingCollection T
+  - 22.4.6 Channel T producer consumer async support
+  - 22.5 Project Thread Safe Counter with Interlocked
+- Chapter 23 : Advanced Testing and Debugging Techniques
+  - 23.1 Snapshot testing with Verify
+  - 23.1.1 Serialising expected output
+  - 23.1.2 Diffing changes
+  - 23.2 Fuzzing random inputs
+  - 23.2.1 FsCheck for property based testing
+  - 23.2.2 Generating arbitrary values
+  - 23.2.3 Shrinking counterexamples
+  - 23.3 Debugging with WinDbg SOS
+  - 23.3.1 Attaching to a process
+  - 23.3.2 dumpheap and gcroot commands
+  - 23.3.3 Analysing deadlocks high CPU
+  - 23.4 Chaos engineering
+  - 23.4.1 Simulating failures with Polly chaos policies
+  - 23.4.2 Fault injection in integration tests
+  - 23.5 Project Property Based Test for Sort Algorithm
+- Chapter 24 : REST API Deep Dive
+  - 24.1 Controllers vs minimal APIs
+  - 24.1.1 Controller based ApiController Route
+  - 24.1.2 Minimal APIs MapGet MapPost
+  - 24.1.3 Trade offs simplicity vs features
+  - 24.2 Routing and model binding
+  - 24.2.1 Attribute routing
+  - 24.2.2 Route constraints
+  - 24.2.3 From body query route header
+  - 24.3 Validation
+  - 24.3.1 Data annotations Required MaxLength
+  - 24.3.2 ApiController automatic validation
+  - 24.3.3 Custom validation attributes
+  - 24.3.4 FluentValidation external library
+  - 24.4 Content negotiation
+  - 24.4.1 Accept header
+  - 24.4.2 Produces and Consumes attributes
+  - 24.4.3 Custom formatters
+  - 24.5 API versioning
+  - 24.5.1 URL path versioning
+  - 24.5.2 Query string versioning
+  - 24.5.3 Header versioning
+  - 24.5.4 Microsoft.AspNetCore.Mvc.Versioning
+  - 24.6 OpenAPI and Swagger
+  - 24.6.1 Swashbuckle.AspNetCore
+  - 24.6.2 Generating Swagger JSON
+  - 24.6.3 Swagger UI for testing
+  - 24.6.4 Annotations ProducesResponseType
+  - 24.7 Problem Details RFC 7807
+  - 24.7.1 ProblemDetails class
+  - 24.7.2 ValidationProblemDetails for errors
+  - 24.7.3 Results.Problem in minimal APIs
+  - 24.8 Project Todo API with Versioning and OpenAPI
+- Chapter 25 : API Security Deep Dive
+  - 25.1 CORS
+  - 25.1.1 Same origin policy
+  - 25.1.2 Preflight requests OPTIONS
+  - 25.1.3 AddCors and UseCors
+  - 25.1.4 Allowed origins methods headers
+  - 25.1.5 Credentials AllowCredentials
+  - 25.2 Rate limiting
+  - 25.2.1 Fixed window sliding window token bucket concurrency
+  - 25.2.2 Built in .Net 7 and later AddRateLimiter EnableRateLimiting
+  - 25.2.3 Partitioning by user IP API key
+  - 25.2.4 Returning 429 with Retry After
+  - 25.3 Security headers
+  - 25.3.1 HSTS Strict Transport Security
+  - 25.3.2 CSP Content Security Policy
+  - 25.3.3 X Frame Options clickjacking
+  - 25.3.4 X Content Type Options nosniff
+  - 25.3.5 Referrer Policy
+  - 25.4 API keys
+  - 25.4.1 Header or query string
+  - 25.4.2 Custom authentication handler
+  - 25.4.3 Storing keys securely Azure Key Vault Data Protection
+  - 25.5 HMAC signing
+  - 25.5.1 Request signing client computes hash
+  - 25.5.2 Server recomputes and compares
+  - 25.5.3 Replay attack prevention nonce timestamp
+  - 25.6 Data Protection DPAPI
+  - 25.6.1 IDataProtectionProvider
+  - 25.6.2 Protect and Unprotect
+  - 25.6.3 Key ring storage automatic rotation
+  - 25.6.4 Purpose strings isolated keys
+  - 25.7 Input validation
+  - 25.7.1 Built in anti XSS not enough
+  - 25.7.2 FluentValidation for complex rules
+  - 25.7.3 Whitelisting vs blacklisting
+  - 25.8 OWASP Top 10 for APIs
+  - 25.8.1 API1 Broken object level authorisation
+  - 25.8.2 API2 Broken authentication
+  - 25.8.3 API3 Excessive data exposure
+  - 25.8.4 API4 Lack of rate limiting
+  - 25.8.5 API5 Broken function level authorisation
+  - 25.8.6 API6 Mass assignment
+  - 25.8.7 API7 Security misconfiguration
+  - 25.8.8 API8 Injection
+  - 25.8.9 API9 Improper asset management
+  - 25.8.10 API10 Insufficient logging and monitoring
+  - 25.9 Project Secured Weather API
+- Chapter 26 : Authentication in ASP.NET Core
+  - 26.1 Authentication schemes
+  - 26.1.1 Cookie authentication for traditional web apps
+  - 26.1.2 JWT Bearer for API tokens
+  - 26.1.3 OAuth 2.0 and OpenID Connect external providers
+  - 26.2 Setup
+  - 26.2.1 AddAuthentication and AddJwtBearer
+  - 26.2.2 Authorize attribute
+  - 26.2.3 AuthenticationHandler custom logic
+  - 26.3 JWT details
+  - 26.3.1 Header payload signature
+  - 26.3.2 Issuer audience expiration
+  - 26.3.3 Symmetric HMAC vs asymmetric RSA signing
+  - 26.4 Project JWT Authentication for Todo API
+- Chapter 27 : Authorization Role Policy and Resource Based
+  - 27.1 Role based
+  - 27.1.1 Authorize with Roles
+  - 27.1.2 Claims with role type
+  - 27.2 Policy based
+  - 27.2.1 AddAuthorization with policies
+  - 27.2.2 RequireClaim RequireRole RequireAssertion
+  - 27.2.3 Custom IAuthorizationRequirement and AuthorizationHandler
+  - 27.3 Resource based
+  - 27.3.1 Inject IAuthorizationService
+  - 27.3.2 Call AuthorizeAsync with user resource requirement
+  - 27.3.3 Inside endpoint check ownership
+  - 27.4 Project Todo API with Role and Ownership Policies
+- Chapter 28 : Database Access with EF Core and Dapper
+  - 28.1 EF Core
+  - 28.1.1 DbContext DbSet
+  - 28.1.2 Migrations Add Migration Update Database
+  - 28.1.3 LINQ queries translated to SQL
+  - 28.1.4 Change tracking and SaveChanges
+  - 28.1.5 Concurrency tokens Timestamp
+  - 28.2 Dapper
+  - 28.2.1 QueryAsync T raw SQL
+  - 28.2.2 ExecuteAsync non query
+  - 28.2.3 Multi mapping QueryAsync T U TResult
+  - 28.2.4 Performance advantage over EF Core
+  - 28.3 When to use which
+  - 28.3.1 EF Core for complex object graphs migrations
+  - 28.3.2 Dapper for read only high performance queries
+  - 28.3.3 Using both together CQRS lite
+  - 28.4 Project Blogging API with EF Core for writes and Dapper for reads
+- Chapter 29 : File IO and Streams for Backend Developers
+  - 29.1 File system helpers
+  - 29.1.1 File Directory FileInfo DirectoryInfo
+  - 29.1.2 ReadAllText WriteAllText convenience but loads entire file
+  - 29.2 Streams
+  - 29.2.1 FileStream read write bytes
+  - 29.2.2 StreamReader StreamWriter for text
+  - 29.2.3 MemoryStream in memory buffer
+  - 29.2.4 GZipStream compression
+  - 29.3 Streaming responses
+  - 29.3.1 Results.Stream in minimal API
+  - 29.3.2 FileStreamResult in controller
+  - 29.3.3 Avoid loading large files into memory
+  - 29.4 Project File Upload and Download API
+- Chapter 30 : Message Queues and Event Driven Architecture
+  - 30.1 Message brokers
+  - 30.1.1 RabbitMQ popular AMQP
+  - 30.1.2 Azure Service Bus cloud
+  - 30.1.3 AWS SQS SNS
+  - 30.1.4 Kafka high throughput
+  - 30.2 Abstractions
+  - 30.2.1 MassTransit supports multiple brokers
+  - 30.2.2 NServiceBus commercial
+  - 30.2.3 Raw client libraries
+  - 30.3 Idempotency
+  - 30.3.1 Idempotency keys in message headers
+  - 30.3.2 Storing processed message IDs
+  - 30.3.3 Exactly once delivery not truly possible but idempotent consumers
+  - 30.4 Outbox pattern
+  - 30.4.1 Store messages in database as part of transaction
+  - 30.4.2 Background processor publishes to broker
+  - 30.4.3 Prevents lost messages on broker failure
+  - 30.5 Dead letter queues
+  - 30.5.1 Handling poison messages
+  - 30.5.2 Retry policies and dead letter after max attempts
+  - 30.6 Project Order Processing with RabbitMQ and MassTransit
+- Chapter 31 : gRPC for High Performance APIs
+  - 31.1 Protocol Buffers
+  - 31.1.1 proto syntax for messages and services
+  - 31.1.2 Scalar types int32 string bool
+  - 31.1.3 Repeated fields enums nested messages
+  - 31.2 gRPC service types
+  - 31.2.1 Unary request response
+  - 31.2.2 Server streaming many responses
+  - 31.2.3 Client streaming many requests
+  - 31.2.4 Bidirectional streaming
+  - 31.3 Implementation in .Net
+  - 31.3.1 Grpc.AspNetCore package
+  - 31.3.2 Code generation from proto
+  - 31.3.3 Service implementation inherits generated base
+  - 31.4 gRPC vs REST
+  - 31.4.1 Performance binary HTTP2 multiplexing
+  - 31.4.2 Contract first vs code first
+  - 31.4.3 gRPC Web for browser clients
+  - 31.5 Project Stock Price Streaming Service
+- Chapter 32 : Real Time Communication with SignalR
+  - 32.1 Hubs
+  - 32.1.1 Hub class
+  - 32.1.2 Methods callable from client
+  - 32.1.3 Calling client methods
+  - 32.2 Connection management
+  - 32.2.1 OnConnectedAsync and OnDisconnectedAsync
+  - 32.2.2 Keeping connection IDs
+  - 32.2.3 Reconnection logic
+  - 32.3 Scaling out
+  - 32.3.1 Redis backplane
+  - 32.3.2 Azure SignalR Service fully managed
+  - 32.3.3 Sticky sessions if not using backplane
+  - 32.4 Transports
+  - 32.4.1 WebSockets best performance
+  - 32.4.2 Server Sent Events SSE
+  - 32.4.3 Long polling fallback
+  - 32.5 Project Live Chat Application
+- Chapter 33 : Docker and Containerisation for .Net Backend
+  - 33.1 Docker basics
+  - 33.1.1 Dockerfile FROM WORKDIR COPY RUN EXPOSE ENTRYPOINT
+  - 33.1.2 Multi stage builds build vs runtime images
+  - 33.1.3 dockerignore
+  - 33.2 Docker Compose
+  - 33.2.1 docker-compose.yml services .Networks volumes
+  - 33.2.2 Environment variables
+  - 33.2.3 Dependencies depends on
+  - 33.3 Health checks
+  - 33.3.1 HEALTHCHECK in Dockerfile
+  - 33.3.2 ASP.NET Core health checks AddHealthChecks
+  - 33.4 Project Dockerise the Todo API with PostgreSQL
+- Chapter 34 : CI CD for .Net Backend
+  - 34.1 CI CD platforms
+  - 34.1.1 GitHub Actions
+  - 34.1.2 Azure DevOps Pipelines
+  - 34.1.3 GitLab CI
+  - 34.1.4 Jenkins legacy
+  - 34.2 Typical pipeline
+  - 34.2.1 Build dotnet build
+  - 34.2.2 Test dotnet test
+  - 34.2.3 Publish dotnet publish
+  - 34.2.4 Build Docker image docker build
+  - 34.2.5 Push to registry docker push
+  - 34.2.6 Deploy to Azure Container Instances Kubernetes VM
+  - 34.3 Infrastructure as Code
+  - 34.3.1 Bicep for Azure Resource Manager
+  - 34.3.2 Terraform multi cloud
+  - 34.4 Project GitHub Actions CI CD for Todo API
+- Chapter 35 : Mid Point Capstone Secure Role Based Access plus OTP REST API
+  - 35.1 Project overview
+  - 35.2 Features JWT roles OTP rate limiting idempotency
+  - 35.3 Implementation steps
+  - 35.3.1 Scaffold ASP.NET Core project with JWT
+  - 35.3.2 Implement user registration and login
+  - 35.3.3 Add role claims and admin endpoints
+  - 35.3.4 OTP generation service 6 digits with expiry
+  - 35.3.5 Background service plus channel for email sending
+  - 35.3.6 Idempotency middleware with Redis
+  - 35.3.7 Integration tests
+  - 35.3.8 Docker and CI CD
+  - 35.4 Deliverables
+- Chapter 36 : Beyond Senior Distributed Systems Cloud Native and Leadership
+  - 36.1 Microservices vs modular monolith
+  - 36.1.1 Benefits and trade offs
+  - 36.1.2 Service discovery Consul Eureka
+  - 36.1.3 API gateways Ocelot YARP Kong
+  - 36.2 Distributed transactions
+  - 36.2.1 Two phase commit not common in microservices
+  - 36.2.2 Saga pattern choreography vs orchestration
+  - 36.2.3 Idempotency and compensating transactions
+  - 36.3 Cloud native patterns
+  - 36.3.1 Retry and circuit breaker with Polly
+  - 36.3.2 Sidecar pattern for example Dapr
+  - 36.3.3 Health checks and liveness probes
+  - 36.4 Leadership
+  - 36.4.1 Architecture Decision Records ADR
+  - 36.4.2 Running technical design reviews
+  - 36.4.3 Mentoring senior engineers
+  - 36.5 Project ADR and Proof of Concept for Saga Pattern
+- Chapter 37 : Final Mastery Project Banking Core System for Finance
+  - 37.1 Business context
+  - 37.2 Core features accounts transfers interest real time feed
+  - 37.3 Technical challenges idempotency concurrency outbox tracing
+  - 37.4 Solution structure modular monolith
+  - 37.5 Data models
+  - 37.6 Implementation steps
+  - 37.6.1 Create solution with four projects
+  - 37.6.2 Define domain models and DbContext
+  - 37.6.3 Implement idempotent transfer endpoint
+  - 37.6.4 Add optimistic concurrency row version
+  - 37.6.5 Set up RabbitMQ and MassTransit
+  - 37.6.6 Implement SignalR hub for balance updates
+  - 37.6.7 Background workers scheduled payments interest outbox
+  - 37.6.8 Add Polly retries for notifications
+  - 37.6.9 Configure OpenTelemetry and Jaeger
+  - 37.6.10 Write Docker Compose
+  - 37.6.11 Write k6 load test
+  - 37.6.12 Set up CI CD
+  - 37.7 Deliverables
+  - 37.8 Optional extensions
+
+</FileTree>
