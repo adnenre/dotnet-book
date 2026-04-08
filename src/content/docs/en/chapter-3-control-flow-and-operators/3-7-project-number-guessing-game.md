@@ -1,5 +1,5 @@
 ---
-title: Project: Number Guessing Game
+title: Project Number Guessing Game
 sidebar:
   order: 33
   label: 3.7 Project Number Guessing Game

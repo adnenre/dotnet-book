@@ -1,5 +1,5 @@
 ---
-title: Projet : Jeu du nombre mystère
+title: Projet Jeu du nombre mystère
 sidebar:
   order: 33
   label: 3.7 Projet Jeu du nombre mystère
