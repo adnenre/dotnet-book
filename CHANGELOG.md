@@ -45,3 +45,50 @@ FileTree accept a props to add translation
   - 1.7.1 Idea ask name and favourite colour print greeting
   - 1.7.2 Folder structure GreetingTool Program.cs
   - 1.7.3 Steps ask name ask colour print personalised greeting
+
+## [Version 1.1.1] - 2024-04-08
+
+### Added
+
+- **Chapter 2 : Primitive Types and Basic Syntax**
+  - 2.1 Value types
+  - 2.1.1 Integral types
+    - 2.1.1.1 sbyte
+    - 2.1.1.2 byte
+    - 2.1.1.3 short
+    - 2.1.1.4 ushort
+    - 2.1.1.5 int
+    - 2.1.1.6 uint
+    - 2.1.1.7 long
+    - 2.1.1.8 ulong
+    - 2.1.2 Floating point types
+    - 2.1.2.1 float
+    - 2.1.2.2 double
+    - 2.1.2.3 decimal
+    - 2.1.3 bool
+    - 2.1.4 char
+  - 2.2 Reference types
+  - 2.2.1 string
+  - 2.2.2 object
+  - 2.2.3 dynamic
+  - 2.3 Variables and constants
+  - 2.3.1 Declaration type variableName
+  - 2.3.2 Initialisation int x = 5
+  - 2.3.3 Type inference with var
+  - 2.3.4 Constants const double Pi = 3.14
+  - 2.3.5 Read only fields
+  - 2.4 String interpolation
+  - 2.4.1 Syntax Hello name
+  - 2.4.2 Formatting value format
+  - 2.4.3 Escape sequences for literal brace
+  - 2.5 Basic IO
+  - 2.5.1 Console.WriteLine line
+  - 2.5.2 Console.Write no newline
+  - 2.5.3 Console.ReadLine returns string
+  - 2.5.4 Console.ReadKey single character
+  - 2.6 Type conversion
+  - 2.6.1 Implicit conversion
+  - 2.6.2 Explicit cast
+  - 2.6.3 Convert class
+  - 2.6.4 Parse and TryParse
+  - 2.7 Project Simple Calculator
