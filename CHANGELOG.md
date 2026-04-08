@@ -201,3 +201,28 @@ FileTree accept a props to add translation
   - 6.5.5 List patterns C# 11
   - 6.5.6 var pattern
   - 6.6 Project Immutable Person Record with Validation
+
+## [Version 1.1.5] - 2024-04-08
+
+### Added
+
+- **Chapter 7 : Delegates Events and Lambdas**
+  - 7.1 Delegates
+  - 7.1.1 Declaration
+  - 7.1.2 Instantiation and invocation
+  - 7.1.3 Multicast delegates
+  - 7.1.4 Generic delegates Action Func Predicate
+  - 7.2 Events
+  - 7.2.1 event keyword
+  - 7.2.2 Subscribing and unsubscribing
+  - 7.2.3 Event invocation
+  - 7.2.4 Standard pattern EventHandler and EventArgs
+  - 7.3 Lambda expressions
+  - 7.3.1 Syntax
+  - 7.3.2 Statement lambdas
+  - 7.3.3 Capturing outer variables closures
+  - 7.3.4 Expression trees
+  - 7.4 Anonymous functions
+  - 7.4.1 delegate keyword pre lambda
+  - 7.4.2 Comparison with lambdas
+  - 7.5 Project Button Click Simulator Event
