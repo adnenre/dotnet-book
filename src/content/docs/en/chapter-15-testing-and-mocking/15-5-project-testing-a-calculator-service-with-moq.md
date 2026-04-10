@@ -2,7 +2,7 @@
 title: "Project: Testing a Calculator Service with Moq"
 sidebar:
   order: 816
-  label: 15.5 Project: Testing a Calculator Service with Moq
+  label: 15.5 Project Testing a Calculator Service with Moq
 ---
 
 **Context**: This project demonstrates unit testing a calculator service using Moq and xUnit. We follow **Test‑Driven Development (TDD)** – writing tests before implementation. TDD cycles: Red (write failing test), Green (implement minimal code to pass), Refactor (improve code). We'll test a `Calculator` class that depends on an `ILogger` and `IConfiguration`.
