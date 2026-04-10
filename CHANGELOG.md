@@ -226,3 +226,77 @@ FileTree accept a props to add translation
   - 7.4.1 delegate keyword pre lambda
   - 7.4.2 Comparison with lambdas
   - 7.5 Project Button Click Simulator Event
+
+## [Version 1.1.6] - 2024-04-08
+
+### Added
+
+- **Chapter 9 : Asynchronous Programming async await**
+  - 9.1 Task based Asynchronous Pattern TAP
+  - 9.1.1 Task no result
+  - 9.1.2 Task T result
+  - 9.1.3 ValueTask and ValueTask T for performance
+  - 9.2 async and await
+  - 9.2.1 Marking method async
+  - 9.2.2 await unwraps the result
+  - 9.2.3 Compiler transformation into state machine
+  - 9.3 Return types of async methods
+  - 9.3.1 Task for void async
+  - 9.3.2 Task T for returning value
+  - 9.3.3 void only for event handlers avoid
+  - 9.4 Asynchronous streams
+  - 9.4.1 IAsyncEnumerable T
+  - 9.4.2 await foreach
+  - 9.4.3 await using asynchronous disposable
+  - 9.5 Avoiding async void
+  - 9.5.1 Exceptions cannot be caught
+  - 9.5.2 Hard to test
+  - 9.6 ConfigureAwait false
+  - 9.6.1 Avoid capturing original SynchronizationContext
+  - 9.6.2 Use in library code
+  - 9.7 Cancellation tokens
+  - 9.7.1 CancellationTokenSource
+  - 9.7.2 CancellationToken
+  - 9.7.3 ThrowIfCancellationRequested
+  - 9.7.4 Cooperative cancellation
+  - 9.8 Project Async Weather Fetcher
+- **Chapter 10 : Memory Management and Performance**
+  - 10.1 Garbage collection
+  - 10.1.1 Generations 0, 1, 2
+  - 10.1.2 Workstation GC vs Server GC
+  - 10.1.3 Background GC
+  - 10.1.4 Large Object Heap LOH
+  - 10.1.5 Pinned objects
+  - 10.2 IDisposable
+  - 10.2.1 Unmanaged resources
+  - 10.2.2 Dispose pattern
+  - 10.2.3 using statement
+  - 10.2.4 await using and IAsyncDisposable
+  - 10.3 Span T and Memory T
+  - 10.3.1 Stack only Span T
+  - 10.3.2 Memory T for heap or async
+  - 10.3.3 ArrayPool T for renting buffers
+  - 10.4 Benchmarking
+  - 10.4.1 BenchmarkDotNet
+  - 10.4.2 Benchmark and MemoryDiagnoser attributes
+  - 10.4.3 Running benchmarks avoiding common pitfalls
+  - 10.5 Project Benchmark String Concatenation vs StringBuilder
+- **Chapter 11 : Generics and Constraints**
+  - 11.1 Generic classes
+  - 11.1.1 Syntax
+  - 11.1.2 Type parameters naming T, TKey, TValue
+  - 11.2 Generic methods
+  - 11.2.1 T MyMethod T param
+  - 11.2.2 Type inference at call site
+  - 11.3 Generic interfaces
+  - 11.3.1 interface IRepository T
+  - 11.3.2 Covariance out T and contravariance in T
+  - 11.4 Constraints
+  - 11.4.1 where T struct value type
+  - 11.4.2 where T class reference type
+  - 11.4.3 where T new parameterless constructor
+  - 11.4.4 where T BaseClass base class constraint
+  - 11.4.5 where T IMyInterface interface constraint
+  - 11.4.6 where T unmanaged no references
+  - 11.4.7 Multiple constraints
+  - 11.5 Project Generic Repository Simulator

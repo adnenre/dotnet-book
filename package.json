@@ -1,7 +1,7 @@
 {
   "name": "dotnet-book",
   "type": "module",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "A book about dotnet – from basics to advanced topics",
   "author": "adnen rebai <adnen.rebai@gmail.com> (https://adnenre.dev)",
   "homepage": "https://dotnet-book.vercel.app/",
