@@ -300,3 +300,76 @@ FileTree accept a props to add translation
   - 11.4.6 where T unmanaged no references
   - 11.4.7 Multiple constraints
   - 11.5 Project Generic Repository Simulator
+
+## [Version 1.1.7] - 2024-04-10
+
+### Added
+
+- **Chapter 12 : Exceptions and Error Handling**
+  - 12.1 try catch finally
+  - 12.1.1 Catching specific exception types
+  - 12.1.2 Multiple catch blocks
+  - 12.1.3 finally for cleanup
+  - 12.2 Exception filters
+  - 12.2.1 catch with when condition
+  - 12.3 Custom exceptions
+  - 12.3.1 Derive from Exception or ApplicationException
+  - 12.3.2 Serialisation constructor
+  - 12.3.3 Adding custom properties
+  - 12.4 ExceptionDispatchInfo
+  - 12.4.1 Capturing and rethrowing with original stack trace
+  - 12.5 Global exception handling
+  - 12.5.1 ASP.NET Core middleware
+  - 12.5.2 AppDomain UnhandledException
+  - 12.5.3 TaskScheduler UnobservedTaskException
+  - 12.6 Project Safe File Reader with Retry
+- **Chapter 13 : Reflection Attributes and Source Generators**
+  - 13.1 Reflection
+  - 13.1.1 Type class
+  - 13.1.2 Assembly loading and scanning
+  - 13.1.3 MemberInfo MethodInfo PropertyInfo
+  - 13.1.4 Invoking methods dynamically
+  - 13.2 Custom attributes
+  - 13.2.1 Attribute class AttributeUsage
+  - 13.2.2 Applying attributes to targets
+  - 13.2.3 Reading attributes with reflection
+  - 13.3 Source generators
+  - 13.3.1 What are source generators
+  - 13.3.2 Incremental generators
+  - 13.3.3 Use cases compile time code performance
+  - 13.3.4 Difference from reflection no runtime overhead
+  - 13.4 Project Attribute Based Validation Engine
+- **Chapter 14 : Modern C# Features for Backend**
+  - 14.1 init only setters
+  - 14.1.1 Immutable objects after construction
+  - 14.1.2 Object initialiser with init
+  - 14.2 Required members C# 11
+  - 14.2.1 required keyword
+  - 14.2.2 Constructor ensures required properties set
+  - 14.3 Record types emphasis
+  - 14.4 Interpolated string handlers
+  - 14.4.1 Performance optimisation for logging
+  - 14.4.2 InterpolatedStringHandler struct
+  - 14.5 Caller info attributes
+  - 14.5.1 CallerMemberName
+  - 14.5.2 CallerArgumentExpression
+  - 14.5.3 CallerFilePath and CallerLineNumber
+  - 14.6 Project Logging Helper with Caller Info
+- **Chapter 15 : Testing and Mocking**
+  - 15.1 Unit testing frameworks
+  - 15.1.1 xUnit Fact Theory InlineData
+  - 15.1.2 NUnit Test TestCase
+  - 15.1.3 MSTest
+  - 15.2 Mocking libraries
+  - 15.2.1 Moq Mock Setup Verify
+  - 15.2.2 NSubstitute Substitute.For
+  - 15.2.3 FakeItEasy
+  - 15.3 Test doubles
+  - 15.3.1 Stub
+  - 15.3.2 Mock
+  - 15.3.3 Fake
+  - 15.4 Integration testing
+  - 15.4.1 WebApplicationFactory TStartup
+  - 15.4.2 In memory database with EF Core
+  - 15.4.3 HttpClient for testing endpoints
+  - 15.5 Project Testing a Calculator Service with Moq
