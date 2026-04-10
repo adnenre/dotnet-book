@@ -2,7 +2,7 @@
 title: "Project: Safe File Reader with Retry"
 sidebar:
   order: 516
-  label: 12.6 Project: Safe File Reader with Retry
+  label: 12.6 Project Safe File Reader with Retry
 ---
 
 **Context**: This project demonstrates robust exception handling by reading a file with automatic retry logic. It handles common I/O exceptions (file not found, access denied, locking), implements a retry policy with exponential backoff, and logs all errors. The user can specify the file path and the number of retries.
